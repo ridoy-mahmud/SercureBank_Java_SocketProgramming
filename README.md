@@ -42,3 +42,15 @@ A secure client-server banking system implementing core banking operations with 
    - Create database using `schema.sql`:
    ```bash
    mysql -u root -p < schema.sql
+
+
+## Outoput
+
+# Register new user]
+
+> REGISTER alice_123 password_here
+SUCCESS: Registration successful
+
+# Login
+> LOGIN alice_123 password_here
+SUCCESS: Logged in. Account: 654321
