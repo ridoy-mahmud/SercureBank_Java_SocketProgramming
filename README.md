@@ -46,11 +46,12 @@ A secure client-server banking system implementing core banking operations with 
 
 ## Outoput
 
-# Register new user]
-
-> REGISTER alice_123 password_here
-SUCCESS: Registration successful
-
-# Login
-> LOGIN alice_123 password_here
-SUCCESS: Logged in. Account: 654321
+1. **Register new user**
+   - REGISTER alice_123 password_here
+   - SUCCESS: Registration successful
+   ```bash
+   
+2. **LOGIN new user**
+   - LOGIN alice_123 password_here
+   - SUCCESS: Login successful
+   ```bash
