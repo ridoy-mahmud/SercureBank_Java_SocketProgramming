@@ -6,14 +6,6 @@
 
 A secure client-server banking system implementing core banking operations with database integration and encrypted communication.
 
-## Features
-
-🔒 **Security Features**
-- BCrypt password hashing
-- SQL injection prevention
-- Session-based authentication
-- Secure client-server communication
-
 🏦 **Banking Operations**
 - User registration & login
 - Account management
@@ -44,7 +36,7 @@ A secure client-server banking system implementing core banking operations with 
    mysql -u root -p < schema.sql
 
 
-## Outoput
+## Output
 
 1. **Register new user**
    - REGISTER alice_123 password_here
