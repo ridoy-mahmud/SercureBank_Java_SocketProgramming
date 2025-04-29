@@ -6,6 +6,20 @@
 
 A secure client-server banking system implementing core banking operations with database integration and encrypted communication.
 
+*Folder Structure**
+
+banking-system/
+├── src/
+│   ├── Server_Thread.java        # Server implementation
+│   ├── Client_thread.java        # Client implementation
+│   └── Database.java             # DB operations & security
+├── lib/
+│   ├── jBCrypt-0.4.jar           # Password hashing
+│   └── mysql-connector-java.jar  # MySQL connectivity
+├── schema.sql                    # Database schema
+└── README.md                     # Documentation
+
+
 🏦 **Banking Operations**
 - User registration & login
 - Account management
