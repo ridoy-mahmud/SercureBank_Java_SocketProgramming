@@ -50,8 +50,10 @@ A secure client-server banking system implementing core banking operations with 
    - REGISTER alice_123 password_here
    - SUCCESS: Registration successful
    ```bash
+   REGISTER alice_123 password_here
    
 2. **LOGIN new user**
    - LOGIN alice_123 password_here
    - SUCCESS: Login successful
    ```bash
+   LOGIN alice_123 password_here
