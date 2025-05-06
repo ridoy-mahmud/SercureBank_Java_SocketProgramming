@@ -20,6 +20,7 @@ public class Server_Thread {
 }
 
 class ClientHandler extends Thread {
+
     private final Socket clientSocket;
     private DataInputStream input;
     private DataOutputStream output;
@@ -36,7 +37,7 @@ class ClientHandler extends Thread {
             output = new DataOutputStream(clientSocket.getOutputStream());
 
             while (true) {
-                output.writeUTF("Enter command (REGISTER, LOGIN, DEPOSIT, WITHDRAW, BALANCE, TRANSACTIONS, EXIT):");
+//                output.writeUTF("Enter command (REGISTER, LOGIN, DEPOSIT, WITHDRAW, BALANCE, TRANSACTIONS, EXIT):");
                 String received = input.readUTF();
                 String[] parts = received.split(":");
                 String command = parts[0].toUpperCase();
@@ -64,7 +65,7 @@ class ClientHandler extends Thread {
                         clientSocket.close();
                         return;
                     default:
-                        output.writeUTF("ERROR: Invalid command");
+                        output.writeUTF("Invalid command");
                 }
             }
         } catch (IOException e) {
@@ -139,5 +140,6 @@ class ClientHandler extends Thread {
     private boolean checkAuth() throws IOException {
         if (!isAuthenticated) output.writeUTF("ERROR: Authentication required");
         return isAuthenticated;
+//        #heleo
     }
 }
